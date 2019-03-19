@@ -1,0 +1,49 @@
+h1 {
+	font-family: 'Moul', cursive;
+}
+
+h2 {
+
+font-family: 'Libre Barcode 39', cursive;
+}
+
+a {
+	color: pink;
+	text-decoration: none;
+} 
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	color: blue;
+}
+h3 {
+	color: red;
+}
+
+#title {
+	color: green;
+}
+#second {
+	color: purple;
+}
+
+.rogers {
+	text-decoration: underline;
+}
+
+.steve {
+	padding: 20px;
+}
+
+.avengers {
+	background-color: red;
+}
+
+.other {
+	text-align: center;
+}
+
+/* text align aligns text center left or right */
