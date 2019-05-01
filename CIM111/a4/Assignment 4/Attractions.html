@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style>
+
+body,html {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas: 'topnav topnav topnav topnav' 'header header header header' 'content content content content' 'content2 content2 content2 content2' 'content3 content3 content3 content3' 'content4 content4 content4 content4' 'content5 content5 content5 content5';
+}
+
+.item1 {
+	grid-area: topnav;
+	background-color: black;
+	color: white;
+	text-align: center;
+	justify-content: center;
+}
+
+.item1 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  display: inline-block;
+}
+
+.item1 li {
+  float: left;
+}
+
+.item1 li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.item2-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+}
+
+.item2 {
+	grid-area: header;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3.amazonaws.com/iexplore_web/images/assets/000/022/189/full/VF_Still_Keys_5.jpg?1527888634");
+	height: 50vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.item3 {
+	grid-area: content;
+	background-color: white;
+	padding: 0px 15px;
+}
+
+.item4 {
+	grid-area: content2;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images1.miaminewtimes.com/imager/u/745xauto/8712270/marinestadium_hox2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: white;
+	padding: 0px 15px;
+	height:30vw;
+}
+
+.item5 {
+	grid-area: content3;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.ytimg.com/vi/Ro7z1WAkGyM/maxresdefault.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: white;
+	padding: 0px 15px;
+	height:30vw;
+}
+
+.item6 {
+	grid-area: content4;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.floridastateparks.org/sites/default/files/styles/callout/public/media/image/26839034_SlNes65bPMBNI1GRIyv3pcs18q0ABlZBh_cmyk_l.jpg?itok=V22Fth0L");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: white;
+	padding: 0px 15px;
+	height:30vw;
+}
+
+.item7 {
+	grid-area: content5;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvdW5kZWZpbmVkL2I2MGQ3NjM3LTk4OGMtNDZiNC1hMGU2LWYwY2M1YmM1MDI1OThmYmY2ZGZiODlhNjY5NzRhY19JTUdfNTg4Ni0xMjAwLmpwZyJdLFsicCIsInRodW1iIiwiMTI4MXg4NTQjIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDgxIC1hdXRvLW9yaWVudCJdXQ");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: white;
+	padding: 0px 15px;
+	height:30vw;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="grid-container">
+	<div class="item1">
+		<ul>
+  <li><a href="Index.html">Home</a></li>
+  <li><a href="Attractions.html">Attractions</a></li>
+  <li><a href="Gallery.html">Gallery</a></li>
+</ul>
+	</div>
+
+	<div class="item2">
+		<div class="item2-text">
+			<h1>Attractions</h1>
+		</div>
+	</div>
+	<div class="item3">
+		<h3>List of Attractions</h3>
+		<ul>
+			<li>Miami Marine Stadium</li>
+			<li>Neptune Memorial Reef</li>
+			<li>Cape Florida Lighthouse</li>
+			<li>Crandon Park Zoo Ruins</li>
+		</ul>
+	</div>
+	<div class="item4">
+		<h3>Miami Marine Stadium</h3>
+		<ul>
+			<li>Abandoned water sports stadium</li>
+			<li>Lots of Graffiti</li>
+		</ul>
+		<br>
+	</div>
+	<div class="item5">
+		<h3>Neptune Memorial Reef</h3>
+		<ul>
+			<li>Submerged structures</li>
+			<li>Accessible only by diving</li>
+		</ul>
+		<br>
+	</div>
+	<div class="item6">
+		<h3>Cape Florida Lighthouse</h3>
+		<ul>
+			<li>Found on the beach at the end of Key Biscayne</li>
+			<li>Can climb up it</li>
+		</ul>
+		<br>
+	</div>
+	<div class="item7">
+		<h3>Crandon Park Zoo Ruins</h3>
+		<ul>
+			<li>Lots of animals still run around here</li>
+			<li>Can see Peacocks and other types of birds</li>
+		</ul>
+		<br>
+	</div>
+</div>
+
+</body>
+</html>
