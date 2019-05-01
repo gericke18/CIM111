@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+
+	</style>
+</head>
+<body>
+
+<div id="myId" class="myClass">
+    <ul>
+        <li>This is an example of video background</li>
+        <li>Playlist is supported</li>
+        <li>Video is cached in the background</li>
+        <li>You can put any content over the top of the video</li>
+    </ul>
+</div>
+
+<script src="js/background-video.js"></script>
+<link type="text/css" href="css/background-video.css" rel="stylesheet" />
+<script>
+new BackgroundVideo({
+    /*
+     * container [optional]: id of the element, where to add video background. 
+     * If ommited, video background is added to the BODY element.
+     * Example:
+     * container: "myId",
+     */
+    
+    /*
+     * video: list of video files
+     * 
+     * Note: If you have one video in different formats (mp4, webm, ogv, etc)
+     * you can add them all to ensure browser compatibility.
+     * Use 'formats' option to list all additional formats.
+     */
+    video: [
+        {
+            file: "video/SampleVideo_1280x720_1mb.mp4",
+            formats: ["webm", "ogv"]
+        },
+        {
+            file: "video/OneBigCircle-HD.mp4.mp4"
+        }
+    ],
+    /*
+     * To save traffic mobile users see a still image instead of video.
+     */
+    mobileImg: "img/Hello-World.jpg",
+    /*
+     * Overlay image to sit over the top of the video (optional)
+     */
+    overlay: "img/dots1.png"
+});
+
+</script>
+</body>
